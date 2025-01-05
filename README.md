@@ -109,3 +109,7 @@ url-shortener/
 - **Version Control**: Git, GitHub.
 
 Feel free to reach out to collaborate or discuss new ideas!
+## Screenshot
+
+![Website Screenshot](url_shortner.png)
+
