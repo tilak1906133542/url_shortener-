@@ -1,0 +1,146 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Header styling */
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+}
+
+.title {
+  color: #ff4757;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 18px;
+  color: #bbb;
+}
+
+/* Main content styling */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.info-section,
+.how-it-works {
+  max-width: 800px;
+  width: 90%; /* Make it scale with screen size */
+  margin-bottom: 30px;
+  text-align: center; /* Center-align text */
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-section ul li::before {
+  content: '✔';
+  color: #ff4757;
+  margin-right: 10px;
+}
+
+/* Form container styling */
+.shorten-form {
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Limit maximum width */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+input {
+  padding: 10px;
+  width: 100%; /* Full width for responsiveness */
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff4757;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Full width for better touch targets */
+}
+
+button:hover {
+  background-color: #e84118;
+}
+
+/* Footer styling */
+footer {
+  width: 100%;
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 20px;
+  color: #bbb;
+  font-size: 14px;
+  border-top: 1px solid #333;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .info-section,
+  .how-it-works {
+    max-width: 95%;
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
